@@ -91,10 +91,10 @@
           </strong>
         {%- else -%}
           {%- if coauthor_url -%}
-            <a href="{{ coauthor_url }}">
+            <span onclick="window.location='{{ coauthor_url }}'" style="cursor: pointer;">
               {{- author.first }}
               {{ author_last_html -}}
-            </a>
+            </span>
           {%- else -%}
             {{- author.first }}
             {{ author_last_html -}}
