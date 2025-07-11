@@ -6,4 +6,4 @@ inline: true
 related_posts: false
 ---
 
-I started intership at <a href="https://www.lgresearch.ai/">LG AI Research</a>.
+Started an internship at <a href="https://www.lgresearch.ai/">LG AI Research</a>.
