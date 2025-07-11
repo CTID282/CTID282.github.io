@@ -64,9 +64,13 @@ layout: default
       {% include selected_papers.liquid %}
     {% endif %}
 
-    <!-- Wrok Experience -->
-    <h2>Work Experience</h2>
-    {% include work_experience.liquid %}
+    <!-- Work Experience -->
+    {% if page.works and page.works.enabled %}
+      <h2>
+        <a href="{{ '/works/' | relative_url }}" style="color: inherit">Work Experience</a>
+      </h2>
+      {% include works.liquid limit=true %}
+    {% endif %}
 
     <!-- Social -->
     {% if page.social %}
