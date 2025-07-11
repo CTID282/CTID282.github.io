@@ -68,10 +68,7 @@ ninja.data = [{
           description: "another project with an image 🎉",
           section: "Projects",handler: () => {
               window.location.href = "/projects/9_project/";
-            },},{id: "work-lg-ai-research-research-intern",
-          title: 'LG AI Research, Research Intern',
-          description: "",
-          section: "Work",},{
+            },},{
       id: 'light-theme',
       title: 'Change theme to light',
       description: 'Change the theme of the site to Light',
