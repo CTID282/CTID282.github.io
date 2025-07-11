@@ -1,0 +1,14 @@
+<ul class="work-experience">
+  {% assign sorted_work = site.work | sort: "date" | reverse %}
+  {% for item in sorted_work %}
+    <li>
+      <strong>
+        {{ item.date | date: "%b %Y" }}
+        {% if item.enddate %}
+          ~ {{ item.enddate | date: "%b %Y" }}
+        {% endif %}
+      </strong>
+      &nbsp;{{ item.content | markdownify | strip_html }}
+    </li>
+  {% endfor %}
+</ul>
