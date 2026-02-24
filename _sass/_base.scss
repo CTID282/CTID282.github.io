@@ -762,12 +762,12 @@ footer.sticky-bottom {
         font-weight: bolder;
 
         a {
-          color: var(--global-text-color);
+          color: var(--global-theme-color);
           text-decoration: none;
 
           &:hover {
             color: var(--global-theme-color);
-            text-decoration: none;
+            text-decoration: underline;
           }
         }
       }
