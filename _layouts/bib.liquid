@@ -187,9 +187,12 @@
       </div>
     {% endif %}
 
-    {% if entry.url %}
+    {% if entry.url or entry.project or entry.code or entry.dataset %}
       <div class="paper-link">
-        <a href="{{ entry.url }}" target="_blank" rel="noopener noreferrer">[paper]</a>
+        {% if entry.url %}<a href="{{ entry.url }}" target="_blank" rel="noopener noreferrer">[paper]</a>{% endif %}
+        {% if entry.project %}<a href="{{ entry.project }}" target="_blank" rel="noopener noreferrer">[project]</a>{% endif %}
+        {% if entry.code %}<a href="{{ entry.code }}" target="_blank" rel="noopener noreferrer">[code]</a>{% endif %}
+        {% if entry.dataset %}<a href="{{ entry.dataset }}" target="_blank" rel="noopener noreferrer">[dataset]</a>{% endif %}
       </div>
     {% endif %}
 
@@ -240,9 +243,6 @@
       {% endif %}
       {% if entry.blog %}
         <a href="{{ entry.blog }}" class="btn btn-sm z-depth-0" role="button">Blog</a>
-      {% endif %}
-      {% if entry.code %}
-        <a href="{{ entry.code }}" class="btn btn-sm z-depth-0" role="button">Code</a>
       {% endif %}
       {% if entry.poster %}
         {% if entry.poster contains '://' %}
