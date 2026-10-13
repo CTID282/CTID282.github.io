@@ -180,8 +180,7 @@
 
     {% capture periodical %}
       {{ entrytype }}
-      {% if entry.year %}, {{ entry.year }}{% endif %}
-      {% if entry.location %}, {{ entry.location }}{% endif %}
+      {% if entry.year %}{{ entry.year }}{% endif %}
     {% endcapture %}
     <div class="periodical">
       {{ periodical | strip }}
