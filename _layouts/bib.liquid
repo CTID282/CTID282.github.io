@@ -48,13 +48,7 @@
   <!-- Entry bib key -->
   <div id="{{ entry.key }}" class="{% if site.enable_publication_thumbnails %}col-sm-8{% else %}col-sm-12{% endif %}">
     <!-- Title -->
-    <div class="title">
-      {% if entry.url %}
-        <a href="{{ entry.url }}" target="_blank" rel="noopener noreferrer">{{ entry.title }}</a>
-      {% else %}
-        {{ entry.title }}
-      {% endif %}
-    </div>
+    <div class="title">{{ entry.title }}</div>
     <!-- Author -->
     <div class="author">
       {% assign author_array_size = entry.author_array | size %}
@@ -181,17 +175,21 @@
     {% capture periodical %}
       {{ entrytype }}
       {% if entry.year %}{{ entry.year }}{% endif %}
+      {% if entry.note %}({{ entry.note | strip }}){% endif %}
     {% endcapture %}
     <div class="periodical">
       {{ periodical | strip }}
-    </div>
-    <div class="periodical">
-      {{ entry.note | strip }}
     </div>
 
     {% if entry.additional_info %}
       <div class="periodical">
         {{ entry.additional_info }}
+      </div>
+    {% endif %}
+
+    {% if entry.url %}
+      <div class="paper-link">
+        <a href="{{ entry.url }}" target="_blank" rel="noopener noreferrer">[paper]</a>
       </div>
     {% endif %}
 

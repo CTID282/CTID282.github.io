@@ -772,6 +772,20 @@ footer.sticky-bottom {
         }
       }
 
+      .author,
+      .periodical,
+      .paper-link {
+        font-size: 0.875rem;
+      }
+
+      .paper-link a {
+        color: var(--global-theme-color);
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
       .author {
         a {
           border-bottom: 1px dashed var(--global-theme-color);
