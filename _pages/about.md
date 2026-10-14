@@ -26,6 +26,8 @@ latest_posts:
 
 I am a Ph.D. student at [Smart Information Systems Research Lab (SISReL)](https://sites.google.com/view/sisrelkaist) in Korea Advanced Institute of Science and Technology (KAIST) advised by Professor [Youngchul Sung](https://sites.google.com/view/youngchulsung).
 
+My research aims to make reinforcement learning sample-efficient and reliable for real-world decision making. I study how agents can leverage offline data and generative policies such as flow matching, and continually improve them through online interaction. Recently, I have been focusing on fine-tuning vision-language-action (VLA) models with online RL for robot manipulation.
+
 <!-- Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
 
 Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
