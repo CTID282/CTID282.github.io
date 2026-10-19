@@ -112,6 +112,9 @@ improve them online, with a recent focus on fine-tuning vision-language-action (
 #section[Academic Activities]
 #entry([*Conference Reviewer*: ICML, NeurIPS, ICLR, AAAI, ICRA], [])
 
+#section[Programming Skills]
+Python, PyTorch, JAX
+
 #section[Teaching Experience]
 #entry([*Teaching Assistant*, Probability and Introductory Random Processes, KAIST], [Sep 2025 -- Dec 2025])
 #entry([*Teaching Assistant*, Machine Learning Basics and Practices, KAIST], [Mar 2025 -- Jun 2025])
