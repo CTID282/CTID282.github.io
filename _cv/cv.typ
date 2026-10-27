@@ -80,7 +80,7 @@ improve them online, with a recent focus on fine-tuning vision-language-action (
     _Preprint_.],
   [Minho Park\*, Kinam Kim\*, Donghu Kim, Byungkun Lee, Dongyoon Hwang, #me, Junha Hyung, Hojoon Lee†, Jaegul Choo†.
     "DiscoDemo: Discovering Efficient and Diverse Robot Demonstrations for Imitation Learning."
-    _Preprint_.
+    _Preprint_. #paper("https://arxiv.org/abs/2610.32093")
     #link("https://davian-robotics.github.io/DiscoDemo/")[[project]]
     #link("https://github.com/DAVIAN-Robotics/DiscoDemo")[[code]]
     #link("https://huggingface.co/collections/DAVIAN-Robotics/discodemo")[[dataset]]],
